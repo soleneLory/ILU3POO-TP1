@@ -27,7 +27,5 @@ public class Parade extends Bataille {
 		}
 		return renvoi;
 	}
-	
-	
 
 }
