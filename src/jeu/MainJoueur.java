@@ -1,0 +1,30 @@
+package jeu;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ListIterator;
+
+import carte.Carte;
+
+public class MainJoueur {
+	private List<Carte> main = new ArrayList<>();
+	
+	void prendre(Carte carte) {
+		main.add(carte);
+	}
+	
+	void jouer(Carte carte) {
+		assert(main.contains(carte));
+		main.remove(carte);
+	}
+
+	@Override
+	public String toString() {
+		StringBuilder stringMain = new StringBuilder();
+		
+		for(ListIterator<Carte> itMain = main.listIterator(); itMain.hasNext();) {
+			stringMain.append(itMain.next());
+		}
+		return stringMain.toString();	
+	}
+}
