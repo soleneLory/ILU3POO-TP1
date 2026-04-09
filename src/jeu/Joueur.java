@@ -1,6 +1,11 @@
 package jeu;
 
+import java.util.Map;
+import java.util.Set;
+
+import carte.Botte;
 import carte.Carte;
+import carte.Type;
 
 public class Joueur {
 	private String name;
@@ -59,6 +64,14 @@ public class Joueur {
 	public boolean estDepotAutorise(Carte carte) {
 		return zoneDeJeu.estDepotAutorise(carte);
 	}
+	
+//	public Set<Coup> coupsPossibles(Set<Joueur> participants){
+//		
+//	}
+	
+	// Methodes necessaires à  l'utilisation d'un HashSet -> HashCode et equals
+	// Refaire dans zone de jeu l'implementation de bottes par un set
+	// 
 	
 	
 	
