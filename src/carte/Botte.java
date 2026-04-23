@@ -13,6 +13,15 @@ public class Botte extends Probleme {
 		return type.getBotte();
 	}
 	
+	@Override
+	public int hashCode() {
+		if(getType() != null)
+			return getType().hashCode();
+		else 
+			return 0;
+	   
+	}
+	
 
 	
 

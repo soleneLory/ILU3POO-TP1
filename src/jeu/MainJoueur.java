@@ -17,6 +17,14 @@ public class MainJoueur {
 		assert(main.contains(carte));
 		main.remove(carte);
 	}
+	
+	public int getNbCartes() {
+	    return main.size();
+	}
+
+	public Carte getCarte(int index) {
+	    return main.get(index);
+	}
 
 	@Override
 	public String toString() {
